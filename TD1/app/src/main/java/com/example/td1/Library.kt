@@ -64,7 +64,6 @@ class Library(private var bookList : MutableList<Book> = mutableListOf() ) {
     }
 
     fun borrowBook(){
-
         println("Enter the Book Title")
         println()
         val bookTitle = readlnOrNull() ?:return
@@ -83,9 +82,7 @@ class Library(private var bookList : MutableList<Book> = mutableListOf() ) {
                     return
                 }
             }
-
         }
-
         println("The book  is not in the library")
     }
 
